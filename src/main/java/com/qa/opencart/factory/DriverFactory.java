@@ -33,7 +33,7 @@ public class DriverFactory {
 		}
 		
 		else {
-			System.out.println("Wrong browser passed...Please input the corerect browser ");
+			System.out.println("Wrong browser name passed...Please input the corerect browser ");
 			throw new FrameWorkException("No Browser FOund Exception");
 		}
 		getDriver().manage().window().maximize();
