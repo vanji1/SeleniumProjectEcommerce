@@ -24,7 +24,7 @@ public class OptionsManager {
 	public ChromeOptions getChromeOptions() {
 		
 		co = new ChromeOptions();
-		
+		co.addArguments("--remote-allow-origins=*");
 		if(prop.getProperty("headless").equals("true")){
 			co.addArguments("--headless");}
 		if(Boolean.parseBoolean(prop.getProperty("incognito"))) {   // here we convert the string to boolean, another way of writing than previous line
